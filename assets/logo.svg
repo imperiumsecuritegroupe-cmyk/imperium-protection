@@ -16,8 +16,7 @@
     </linearGradient>
   </defs>
 
-  <!-- Fond noir -->
-  <rect width="680" height="500" fill="#050505"/>
+  <!-- Fond transparent -->
 
   <!-- Bouclier - bordure or extérieure -->
   <path d="M340 22 L498 80 L498 278 Q498 400 340 468 Q182 400 182 278 L182 80 Z" fill="url(#g1)"/>

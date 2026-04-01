@@ -185,7 +185,6 @@ section { position: relative; padding: 6rem 0; overflow: hidden; }
 .hero-logo {
   width: 120px;
   margin-bottom: 1.5rem;
-  filter: brightness(0) invert(1);
 }
 .hero-tag {
   font-size: .75rem;
