@@ -739,7 +739,7 @@
         toast.classList.add('show');
         setTimeout(() => toast.classList.remove('show'), 4000);
       }
-      form.addEventListener('submit', function (e) {
+      form.addEventListener('submit', async function (e) {
         e.preventDefault();
         const required = form.querySelectorAll('[required]');
         let valid = true;
@@ -750,14 +750,30 @@
         });
         if (!valid) { showToast('Please fill in all required fields.', false); return; }
         const btn = form.querySelector('button[type=submit]');
+        const originalText = btn.textContent;
         btn.textContent = 'Sending…';
         btn.disabled = true;
-        setTimeout(() => {
-          showToast('✓ Your request has been sent. We will contact you as soon as possible.');
-          form.reset();
-          btn.textContent = 'Submit my confidential request';
-          btn.disabled = false;
-        }, 1600);
+        try {
+          const data = new FormData(form);
+          data.append('_subject', 'New protection request – Imperium Private Protection');
+          data.append('_template', 'table');
+          data.append('_captcha', 'false');
+          const res = await fetch('https://formsubmit.co/ajax/imperiumsecuritegroupe@gmail.com', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: data
+          });
+          if (res.ok) {
+            showToast('✓ Your request has been sent. We will contact you as soon as possible.');
+            form.reset();
+          } else {
+            showToast('An error occurred. Please try again or call us directly.', false);
+          }
+        } catch (_) {
+          showToast('An error occurred. Please try again or call us directly.', false);
+        }
+        btn.textContent = originalText;
+        btn.disabled = false;
       });
 
       const sections = document.querySelectorAll('section[id]');

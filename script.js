@@ -93,7 +93,7 @@
     setTimeout(() => toast.classList.remove('show'), 4000);
   }
 
-  form.addEventListener('submit', function (e) {
+  form.addEventListener('submit', async function (e) {
     e.preventDefault();
     const required = form.querySelectorAll('[required]');
     let valid = true;
@@ -104,16 +104,35 @@
     });
     if (!valid) { showToast('Veuillez remplir tous les champs obligatoires.', false); return; }
 
-    // Simulate send
     const btn = form.querySelector('button[type=submit]');
+    const originalText = btn.textContent;
     btn.textContent = 'Envoi en cours…';
     btn.disabled = true;
-    setTimeout(() => {
-      showToast('✓ Votre demande a été envoyée. Nous vous contacterons dans les plus brefs délais.');
-      form.reset();
-      btn.textContent = 'Envoyer ma demande confidentielle';
-      btn.disabled = false;
-    }, 1600);
+
+    try {
+      const data = new FormData(form);
+      data.append('_subject', 'Nouvelle demande de protection – Imperium Private Protection');
+      data.append('_template', 'table');
+      data.append('_captcha', 'false');
+
+      const res = await fetch('https://formsubmit.co/ajax/imperiumsecuritegroupe@gmail.com', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: data
+      });
+
+      if (res.ok) {
+        showToast('✓ Votre demande a été envoyée. Nous vous contacterons dans les plus brefs délais.');
+        form.reset();
+      } else {
+        showToast('Une erreur est survenue. Veuillez réessayer ou nous appeler directement.', false);
+      }
+    } catch (_) {
+      showToast('Une erreur est survenue. Veuillez réessayer ou nous appeler directement.', false);
+    }
+
+    btn.textContent = originalText;
+    btn.disabled = false;
   });
 
   /* ── Smooth active nav highlight on scroll ── */
