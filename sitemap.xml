@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ===== PAGES PRINCIPALES FR ===== -->
+  <url>
+    <loc>https://www.imperiumprotection.fr/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/protection-rapprochee.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/protection-rapprochee.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/close-protection.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/protection-personnalite.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/protection-personnalite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/vip-protection.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/accompagnement-international.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/accompagnement-international.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/international-escort.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/securisation-residence.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/securisation-residence.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/residence-security.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/intelligence-analyse-risque.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/intelligence-analyse-risque.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/intelligence-risk.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/cyber-securite.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/cyber-securite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/cyber-security.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ===== PAGES VILLES FR ===== -->
+  <url>
+    <loc>https://www.imperiumprotection.fr/villes/paris.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/villes/paris.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/cities/paris.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/villes/nice.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/villes/nice.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/cities/nice.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/villes/cannes.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/villes/cannes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/cities/cannes.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/villes/monaco.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/villes/monaco.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/cities/monaco.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/villes/saint-tropez.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/villes/saint-tropez.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/cities/saint-tropez.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/villes/courchevel.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/villes/courchevel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/cities/courchevel.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/villes/megeve.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/villes/megeve.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/cities/megeve.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/villes/antibes.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/villes/antibes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/cities/antibes.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/villes/juan-les-pins.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/villes/juan-les-pins.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/cities/juan-les-pins.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/villes/grimaud.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/villes/grimaud.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/cities/grimaud.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/villes/saint-jean-cap-ferrat.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/villes/saint-jean-cap-ferrat.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/cities/saint-jean-cap-ferrat.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/villes/ramatuelle.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/villes/ramatuelle.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/cities/ramatuelle.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/villes/mougins.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/villes/mougins.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/cities/mougins.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ===== PAGES PRINCIPALES EN ===== -->
+  <url>
+    <loc>https://www.imperiumprotection.fr/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imperiumprotection.fr/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.imperiumprotection.fr/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/en/close-protection.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/en/vip-protection.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/en/international-escort.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/en/residence-security.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/en/intelligence-risk.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.imperiumprotection.fr/en/cyber-security.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- ===== PAGES VILLES EN ===== -->
+  <url><loc>https://www.imperiumprotection.fr/en/cities/paris.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.imperiumprotection.fr/en/cities/nice.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.imperiumprotection.fr/en/cities/cannes.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.imperiumprotection.fr/en/cities/monaco.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.imperiumprotection.fr/en/cities/saint-tropez.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.imperiumprotection.fr/en/cities/courchevel.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.imperiumprotection.fr/en/cities/megeve.html</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.imperiumprotection.fr/en/cities/antibes.html</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.imperiumprotection.fr/en/cities/juan-les-pins.html</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.imperiumprotection.fr/en/cities/grimaud.html</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.imperiumprotection.fr/en/cities/saint-jean-cap-ferrat.html</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.imperiumprotection.fr/en/cities/ramatuelle.html</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.imperiumprotection.fr/en/cities/mougins.html</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
+</urlset>
