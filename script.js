@@ -31,15 +31,11 @@
   const backTop = document.getElementById('backTop');
   backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-  /* ── Smooth scroll without # in URL ── */
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', function (e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
-        history.replaceState(null, '', window.location.pathname);
-      }
+  /* ── Smooth scroll via data-scroll (no # in URL) ── */
+  document.querySelectorAll('a[data-scroll]').forEach(a => {
+    a.addEventListener('click', function () {
+      const target = document.getElementById(this.dataset.scroll);
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
     });
   });
 
@@ -156,7 +152,7 @@
       entries.forEach(e => {
         if (e.isIntersecting) {
           navAs.forEach(a => a.classList.remove('active'));
-          const active = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+          const active = document.querySelector(`.nav-links a[data-scroll="${e.target.id}"]`);
           if (active) active.classList.add('active');
         }
       });

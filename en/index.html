@@ -33,11 +33,11 @@
         <span class="logo-text">IMPERIUM<span>PRIVATE PROTECTION</span></span>
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#coverage">Coverage</a>
-        <a href="#team">Team</a>
-        <a href="#contact" class="btn-nav">Contact</a>
+        <a href="javascript:void(0)" data-scroll="services">Services</a>
+        <a href="javascript:void(0)" data-scroll="about">About</a>
+        <a href="javascript:void(0)" data-scroll="coverage">Coverage</a>
+        <a href="javascript:void(0)" data-scroll="team">Team</a>
+        <a href="javascript:void(0)" data-scroll="contact" class="btn-nav">Contact</a>
         <a href="/" class="lang-switch" onclick="localStorage.setItem('imperium_lang','fr')">FR</a>
       </nav>
       <button class="burger" id="burger" aria-label="Menu">
@@ -58,8 +58,8 @@
       <h1>Physical integrity protection<br /><span>at your level of excellence</span></h1>
       <p class="hero-desc">We protect individuals, public figures and families against targeting, harassment and personal threats — in France and internationally.</p>
       <div class="hero-actions">
-        <a href="#contact" class="btn btn-gold">Request an Assessment</a>
-        <a href="#services" class="btn btn-outline">Our Services</a>
+        <a href="javascript:void(0)" data-scroll="contact" class="btn btn-gold">Request an Assessment</a>
+        <a href="javascript:void(0)" data-scroll="services" class="btn btn-outline">Our Services</a>
       </div>
     </div>
     <div class="hero-badges">
@@ -67,7 +67,7 @@
       <div class="badge"><span class="badge-num">40+</span><span>Countries Covered</span></div>
       <div class="badge"><span class="badge-num">500+</span><span>Successful Missions</span></div>
     </div>
-    <a href="#services" class="scroll-down" aria-label="Scroll down"><span></span></a>
+    <a href="javascript:void(0)" data-scroll="services" class="scroll-down" aria-label="Scroll down"><span></span></a>
   </section>
 
   <!-- ===== SERVICES ===== -->
@@ -265,7 +265,7 @@
               </div>
             </div>
           </div>
-          <a href="#contact" class="btn btn-gold">Book a Vehicle</a>
+          <a href="javascript:void(0)" data-scroll="contact" class="btn btn-gold">Book a Vehicle</a>
         </div>
       </div>
     </div>
@@ -290,7 +290,7 @@
           <div class="val"><span class="val-icon">◆</span> Operational excellence</div>
           <div class="val"><span class="val-icon">◆</span> Guaranteed confidentiality</div>
         </div>
-        <a href="#contact" class="btn btn-gold">Contact Us</a>
+        <a href="javascript:void(0)" data-scroll="contact" class="btn btn-gold">Contact Us</a>
       </div>
       <div class="about-img-wrap">
         <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80" alt="Imperium management team" />
@@ -387,7 +387,7 @@
               <p>Americas, Asia, Africa, Middle East. Coordinated deployment in 40+ countries, including high-risk zones.</p>
             </div>
           </div>
-          <a href="#contact" class="btn btn-dark">Assess my mission →</a>
+          <a href="javascript:void(0)" data-scroll="contact" class="btn btn-dark">Assess my mission →</a>
         </div>
       </div>
     </div>
@@ -638,11 +638,11 @@
         <div class="footer-links">
           <h5>Company</h5>
           <ul>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#team">Our team</a></li>
-            <li><a href="#coverage">Coverage zones</a></li>
-            <li><a href="#contact">Careers</a></li>
-            <li><a href="#contact">Partners</a></li>
+            <li><a href="javascript:void(0)" data-scroll="about">About us</a></li>
+            <li><a href="javascript:void(0)" data-scroll="team">Our team</a></li>
+            <li><a href="javascript:void(0)" data-scroll="coverage">Coverage zones</a></li>
+            <li><a href="javascript:void(0)" data-scroll="contact">Careers</a></li>
+            <li><a href="javascript:void(0)" data-scroll="contact">Partners</a></li>
           </ul>
         </div>
         <div class="footer-contact-col">
@@ -783,7 +783,7 @@
         entries.forEach(e => {
           if (e.isIntersecting) {
             navAs.forEach(a => a.classList.remove('active'));
-            const active = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+            const active = document.querySelector(`.nav-links a[data-scroll="${e.target.id}"]`);
             if (active) active.classList.add('active');
           }
         });
