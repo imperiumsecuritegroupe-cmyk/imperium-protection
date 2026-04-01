@@ -1,16 +1,103 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
-  <!-- Shield background -->
-  <path d="M50 6L12 22V50C12 70 28 87 50 94C72 87 88 70 88 50V22L50 6Z"
-        fill="#b8975a" opacity="0.15"/>
-  <!-- Shield outline -->
-  <path d="M50 6L12 22V50C12 70 28 87 50 94C72 87 88 70 88 50V22L50 6Z"
-        stroke="#b8975a" stroke-width="2.5" stroke-linejoin="round" fill="none"/>
-  <!-- Inner lines -->
-  <path d="M50 18L24 30V50C24 65 35 77 50 82C65 77 76 65 76 50V30L50 18Z"
-        stroke="#b8975a" stroke-width="1.5" stroke-linejoin="round"
-        fill="none" opacity="0.5"/>
-  <!-- Letter I -->
-  <line x1="46" y1="36" x2="54" y2="36" stroke="#b8975a" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="50" y1="36" x2="50" y2="64" stroke="#b8975a" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="46" y1="64" x2="54" y2="64" stroke="#b8975a" stroke-width="2.5" stroke-linecap="round"/>
+<svg width="680" height="500" viewBox="0 0 680 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F0D060"/>
+      <stop offset="45%" stop-color="#C09A10"/>
+      <stop offset="100%" stop-color="#7A6008"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1C1C1C"/>
+      <stop offset="100%" stop-color="#060606"/>
+    </linearGradient>
+    <linearGradient id="gH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C09A10" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#C09A10"/>
+      <stop offset="100%" stop-color="#C09A10" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fond noir -->
+  <rect width="680" height="500" fill="#050505"/>
+
+  <!-- Bouclier - bordure or extérieure -->
+  <path d="M340 22 L498 80 L498 278 Q498 400 340 468 Q182 400 182 278 L182 80 Z" fill="url(#g1)"/>
+  <!-- Bouclier - corps noir -->
+  <path d="M340 34 L486 89 L486 276 Q486 392 340 455 Q194 392 194 276 L194 89 Z" fill="url(#g2)"/>
+  <!-- Bouclier - filet intérieur or -->
+  <path d="M340 50 L470 103 L470 274 Q470 382 340 440 Q210 382 210 274 L210 103 Z"
+        fill="none" stroke="#C09A10" stroke-width="1.2" opacity="0.5"/>
+
+  <!-- Couronne héraldique -->
+  <path d="M296 98 L296 82 L312 98 L326 76 L340 98 L354 76 L368 98 L384 82 L384 98 Z"
+        fill="url(#g1)"/>
+  <rect x="296" y="98" width="88" height="6" rx="1.5" fill="url(#g1)"/>
+
+  <!-- Ligne déco sous couronne -->
+  <rect x="210" y="120" width="260" height="1" fill="url(#gH)" opacity="0.5"/>
+
+  <!-- IMPERIUM -->
+  <text x="340" y="195"
+        text-anchor="middle"
+        font-family="Palatino Linotype, Palatino, Georgia, serif"
+        font-size="44"
+        font-weight="700"
+        fill="url(#g1)"
+        letter-spacing="8">IMPERIUM</text>
+
+  <!-- Ligne séparatrice centrale -->
+  <rect x="210" y="215" width="260" height="1.5" fill="url(#gH)"/>
+
+  <!-- PRIVATE -->
+  <text x="340" y="248"
+        text-anchor="middle"
+        font-family="Palatino Linotype, Palatino, Georgia, serif"
+        font-size="14"
+        letter-spacing="8"
+        fill="url(#g1)"
+        opacity="0.9">PRIVATE</text>
+
+  <!-- PROTECTION -->
+  <text x="340" y="272"
+        text-anchor="middle"
+        font-family="Palatino Linotype, Palatino, Georgia, serif"
+        font-size="14"
+        letter-spacing="8"
+        fill="url(#g1)"
+        opacity="0.9">PROTECTION</text>
+
+  <!-- Ligne déco -->
+  <rect x="210" y="288" width="260" height="1" fill="url(#gH)" opacity="0.5"/>
+
+  <!-- Étoiles décoratives -->
+  <circle cx="280" cy="312" r="3" fill="url(#g1)" opacity="0.7"/>
+  <circle cx="300" cy="312" r="2" fill="url(#g1)" opacity="0.5"/>
+  <circle cx="340" cy="314" r="5" fill="url(#g1)"/>
+  <circle cx="380" cy="312" r="2" fill="url(#g1)" opacity="0.5"/>
+  <circle cx="400" cy="312" r="3" fill="url(#g1)" opacity="0.7"/>
+
+  <!-- Devise -->
+  <text x="340" y="345"
+        text-anchor="middle"
+        font-family="Palatino Linotype, Palatino, Georgia, serif"
+        font-size="9.5"
+        letter-spacing="4"
+        fill="#C09A10"
+        opacity="0.65">PROTEGIMUS · SERVIMUS</text>
+
+  <!-- Ruban bas -->
+  <path d="M218 368 Q340 358 462 368 L460 390 Q340 380 220 390 Z"
+        fill="#0E0E0E" stroke="url(#g1)" stroke-width="1"/>
+  <text x="340" y="383"
+        text-anchor="middle"
+        font-family="Palatino Linotype, Palatino, Georgia, serif"
+        font-size="9"
+        font-weight="700"
+        fill="url(#g1)"
+        letter-spacing="3.5">CLOSE PROTECTION SERVICES</text>
+
+  <!-- Ornements latéraux -->
+  <line x1="150" y1="430" x2="260" y2="430" stroke="url(#g1)" stroke-width="0.7" opacity="0.3"/>
+  <polygon points="260,427 268,430 260,433" fill="url(#g1)" opacity="0.3"/>
+  <line x1="420" y1="430" x2="530" y2="430" stroke="url(#g1)" stroke-width="0.7" opacity="0.3"/>
+  <polygon points="420,427 412,430 420,433" fill="url(#g1)" opacity="0.3"/>
 </svg>
