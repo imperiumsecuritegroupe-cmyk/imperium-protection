@@ -189,7 +189,8 @@ section { position: relative; padding: 6rem 0; overflow: hidden; }
   align-items: center;
 }
 .hero-logo {
-  width: 260px;
+  width: 420px;
+  max-width: 80vw;
   margin-bottom: 2rem;
 }
 .hero-tag {
