@@ -80,10 +80,23 @@ export default function ScrollAnimations() {
 
     sections.forEach((s) => secObserver.observe(s))
 
+    // Smooth scroll for all [data-scroll] elements (hero buttons, nav links, etc.)
+    function handleScrollClick(e: MouseEvent) {
+      const target = (e.target as HTMLElement).closest('[data-scroll]')
+      if (!target) return
+      const id = (target as HTMLElement).dataset.scroll
+      if (!id) return
+      e.preventDefault()
+      const el = document.getElementById(id)
+      if (el) el.scrollIntoView({ behavior: 'smooth' })
+    }
+    document.addEventListener('click', handleScrollClick)
+
     return () => {
       observer.disconnect()
       counterObserver.disconnect()
       secObserver.disconnect()
+      document.removeEventListener('click', handleScrollClick)
     }
   }, [])
 
