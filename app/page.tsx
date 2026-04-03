@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import ContactForm from '@/components/ContactForm'
+import ScrollLink from '@/components/ScrollLink'
 
 const teamSilhouette = (
   <svg viewBox="0 0 120 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="team-silhouette">
@@ -31,8 +32,8 @@ export default function HomePage() {
           <h1>Protection de l&apos;intégrité physique<br /><span>à votre niveau d&apos;exigence</span></h1>
           <p className="hero-desc">Nous protégeons les individus, les personnalités et les familles face aux menaces de ciblage, harcèlement et atteintes à la personne — en France et à l&apos;international.</p>
           <div className="hero-actions">
-            <a href="javascript:void(0)" data-scroll="contact" className="btn btn-gold">Demander une évaluation</a>
-            <a href="javascript:void(0)" data-scroll="services" className="btn btn-outline">Nos services</a>
+            <ScrollLink to="contact" className="btn btn-gold">Demander une évaluation</ScrollLink>
+            <ScrollLink to="services" className="btn btn-outline">Nos services</ScrollLink>
           </div>
         </div>
         <div className="hero-badges">
@@ -40,9 +41,9 @@ export default function HomePage() {
           <div className="badge"><span className="badge-num">40+</span><span>Pays couverts</span></div>
           <div className="badge"><span className="badge-num">500+</span><span>Missions réussies</span></div>
         </div>
-        <a href="javascript:void(0)" data-scroll="services" className="scroll-down" aria-label="Défiler vers le bas">
+        <ScrollLink to="services" className="scroll-down" aria-label="Défiler vers le bas">
           <span></span>
-        </a>
+        </ScrollLink>
       </section>
 
       {/* SERVICES */}
@@ -238,7 +239,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-              <a href="javascript:void(0)" data-scroll="contact" className="btn btn-gold">Réserver un véhicule</a>
+              <ScrollLink to="contact" className="btn btn-gold">Réserver un véhicule</ScrollLink>
             </div>
           </div>
         </div>
@@ -263,7 +264,7 @@ export default function HomePage() {
               <div className="val"><span className="val-icon">◆</span> Excellence opérationnelle</div>
               <div className="val"><span className="val-icon">◆</span> Confidentialité garantie</div>
             </div>
-            <a href="javascript:void(0)" data-scroll="contact" className="btn btn-gold">Nous contacter</a>
+            <ScrollLink to="contact" className="btn btn-gold">Nous contacter</ScrollLink>
           </div>
           <div className="about-img-wrap">
             <Image src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80" alt="Équipe de direction Imperium" width={800} height={1000} style={{ objectFit: 'cover', borderRadius: '8px' }} />
@@ -360,7 +361,7 @@ export default function HomePage() {
                   <p>Amériques, Asie, Afrique, Moyen-Orient. Déploiement coordonné sur 40+ pays, y compris zones à risque.</p>
                 </div>
               </div>
-              <a href="javascript:void(0)" data-scroll="contact" className="btn btn-dark">Évaluer ma mission →</a>
+              <ScrollLink to="contact" className="btn btn-dark">Évaluer ma mission →</ScrollLink>
             </div>
           </div>
         </div>
@@ -551,11 +552,11 @@ export default function HomePage() {
             <div className="footer-links">
               <h5>Société</h5>
               <ul>
-                <li><a href="javascript:void(0)" data-scroll="about">À propos</a></li>
-                <li><a href="javascript:void(0)" data-scroll="team">Notre équipe</a></li>
-                <li><a href="javascript:void(0)" data-scroll="coverage">Nos zones d&apos;intervention</a></li>
-                <li><a href="javascript:void(0)" data-scroll="contact">Recrutement</a></li>
-                <li><a href="javascript:void(0)" data-scroll="contact">Partenaires</a></li>
+                <li><ScrollLink to="about">À propos</ScrollLink></li>
+                <li><ScrollLink to="team">Notre équipe</ScrollLink></li>
+                <li><ScrollLink to="coverage">Nos zones d&apos;intervention</ScrollLink></li>
+                <li><ScrollLink to="contact">Recrutement</ScrollLink></li>
+                <li><ScrollLink to="contact">Partenaires</ScrollLink></li>
               </ul>
             </div>
             <div className="footer-contact-col">

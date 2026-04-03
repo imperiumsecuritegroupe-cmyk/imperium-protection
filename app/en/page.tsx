@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import ContactForm from '@/components/ContactForm'
+import ScrollLink from '@/components/ScrollLink'
 
 const teamSilhouette = (
   <svg viewBox="0 0 120 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="team-silhouette">
@@ -31,8 +32,8 @@ export default function EnHomePage() {
           <h1>Physical integrity protection<br /><span>at your level of excellence</span></h1>
           <p className="hero-desc">We protect individuals, public figures and families against targeting, harassment and personal threats — in France and internationally.</p>
           <div className="hero-actions">
-            <a href="javascript:void(0)" data-scroll="contact" className="btn btn-gold">Request an Assessment</a>
-            <a href="javascript:void(0)" data-scroll="services" className="btn btn-outline">Our Services</a>
+            <ScrollLink to="contact" className="btn btn-gold">Request an Assessment</ScrollLink>
+            <ScrollLink to="services" className="btn btn-outline">Our Services</ScrollLink>
           </div>
         </div>
         <div className="hero-badges">
@@ -40,9 +41,9 @@ export default function EnHomePage() {
           <div className="badge"><span className="badge-num">40+</span><span>Countries Covered</span></div>
           <div className="badge"><span className="badge-num">500+</span><span>Successful Missions</span></div>
         </div>
-        <a href="javascript:void(0)" data-scroll="services" className="scroll-down" aria-label="Scroll down">
+        <ScrollLink to="services" className="scroll-down" aria-label="Scroll down">
           <span></span>
-        </a>
+        </ScrollLink>
       </section>
 
       {/* SERVICES */}
@@ -168,7 +169,7 @@ export default function EnHomePage() {
                 <div className="chauf-badge"><span className="chauf-icon">🌐</span><div><strong>Trilingual drivers on request</strong><span>French – English – Arabic · French – English – Russian · and other languages</span></div></div>
                 <div className="chauf-badge"><span className="chauf-icon">🛡</span><div><strong>Security-trained drivers</strong><span>Defensive driving, counter-surveillance, emergency extraction, CNAPS certified</span></div></div>
               </div>
-              <a href="javascript:void(0)" data-scroll="contact" className="btn btn-gold">Book a Vehicle</a>
+              <ScrollLink to="contact" className="btn btn-gold">Book a Vehicle</ScrollLink>
             </div>
           </div>
         </div>
@@ -193,7 +194,7 @@ export default function EnHomePage() {
               <div className="val"><span className="val-icon">◆</span> Operational excellence</div>
               <div className="val"><span className="val-icon">◆</span> Guaranteed confidentiality</div>
             </div>
-            <a href="javascript:void(0)" data-scroll="contact" className="btn btn-gold">Contact Us</a>
+            <ScrollLink to="contact" className="btn btn-gold">Contact Us</ScrollLink>
           </div>
           <div className="about-img-wrap">
             <Image src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80" alt="Imperium management team" width={800} height={1000} style={{ objectFit: 'cover', borderRadius: '8px' }} />
@@ -248,7 +249,7 @@ export default function EnHomePage() {
               <div className="cov-item"><div className="cov-icon">🇫🇷</div><div><h4>In France</h4><p>Paris, Lyon, Marseille, Nice, Bordeaux, Toulouse, Strasbourg. Nationwide response within 6 hours.</p></div></div>
               <div className="cov-item"><div className="cov-icon">🇪🇺</div><div><h4>Europe</h4><p>London, Geneva, Monaco, Madrid, Rome, Dubai, Brussels — network of certified partners.</p></div></div>
               <div className="cov-item"><div className="cov-icon">🌍</div><div><h4>Worldwide</h4><p>Americas, Asia, Africa, Middle East. Coordinated deployment in 40+ countries, including high-risk zones.</p></div></div>
-              <a href="javascript:void(0)" data-scroll="contact" className="btn btn-dark">Assess my mission →</a>
+              <ScrollLink to="contact" className="btn btn-dark">Assess my mission →</ScrollLink>
             </div>
           </div>
         </div>
@@ -342,11 +343,11 @@ export default function EnHomePage() {
             <div className="footer-links">
               <h5>Company</h5>
               <ul>
-                <li><a href="javascript:void(0)" data-scroll="about">About us</a></li>
-                <li><a href="javascript:void(0)" data-scroll="team">Our team</a></li>
-                <li><a href="javascript:void(0)" data-scroll="coverage">Coverage zones</a></li>
-                <li><a href="javascript:void(0)" data-scroll="contact">Careers</a></li>
-                <li><a href="javascript:void(0)" data-scroll="contact">Partners</a></li>
+                <li><ScrollLink to="about">About us</ScrollLink></li>
+                <li><ScrollLink to="team">Our team</ScrollLink></li>
+                <li><ScrollLink to="coverage">Coverage zones</ScrollLink></li>
+                <li><ScrollLink to="contact">Careers</ScrollLink></li>
+                <li><ScrollLink to="contact">Partners</ScrollLink></li>
               </ul>
             </div>
             <div className="footer-contact-col">
